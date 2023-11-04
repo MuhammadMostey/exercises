@@ -1,2 +1,6 @@
-# exercises
-Code exercises for practicing Programming concepts and build small projects using programming languages &amp; technologies
+# Exercises
+<pre>
+  Code exercises for practicing Programming concepts and building small projects using programming languages &amp; Technologies
+</pre>
+
+
