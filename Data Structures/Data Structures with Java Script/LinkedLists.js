@@ -23,17 +23,15 @@ class LinkedList {
 
 
     prependNode(value){
-        let preNode = {
+        const preNode = {
             data: value,
             next: null
         };
-
-        let currentNode = this.head;
+        preNode.next = this.head;
         this.head = preNode;
-        this.head.next = currentNode;
         this.length++;
     }
-    
+
 }
 
 //testing the linkedlist
