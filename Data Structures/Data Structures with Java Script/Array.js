@@ -13,4 +13,4 @@ class myArray {
 
 // testing array
 arrNew = new myArray();
-console.log(arrNew);
+console.log(arrNew);q
