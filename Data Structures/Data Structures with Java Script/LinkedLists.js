@@ -27,10 +27,6 @@ class LinkedList {
 
     prependNode(value){
         const preNode = new Node(value);
-        // const preNode = {
-        //     data: value,
-        //     next: null
-        // };
 
         preNode.next = this.head;
         this.head = preNode;
@@ -40,31 +36,27 @@ class LinkedList {
     insert(index, value){
         if (index >= this.length){
             return this.appendNode(value);
+        } else if (index = 0){
+            return this.prependNode(value);
         }
 
         const insertedNode = new Node(value);
-        // const insertedNode = {
-        //     data: value,
-        //     next: null
-        // };
+       
 
-        // [0, 1, 2]
+        // [0, 1, 2, 3]
         // nodeA -> insertedNode -> nodeB
+        // [1]         [2]           [3]
+        // nodeB = [1].next
         // nodeA = [1]
+        //  nodeA.next [2]
+        //  [2].next = nodeB
         const nodeA = this.traverseToIndex(index-1); 
         const nodeB = nodeA.next;
 
         insertedNode.next = nodeB;
         nodeA.next = insertedNode;
-
-        // nodeA.next = insertedNode;
-        // insertedNode.next = nodeA;
+4
         this.length++;
-
-
-        
-        // check if index is 1 to update the head.
-        // check if index == this.length to update the tail.
     }
 
     traverseToIndex(index){
@@ -81,16 +73,12 @@ class LinkedList {
         const array = [];
         let currentNode = this.head;
         while (currentNode !== null) {
-            // console.log(currentNode.data);
             array.push(currentNode.data);
             currentNode = currentNode.next;
         }
-        // return array;
         console.log(array);
-
     }
 
-    
 
 }
 
