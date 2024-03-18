@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title></title>
+    <title>Little Lemon Resturant</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <picture>
-          <img src="./assets/logo/Asset 16@4x.png" alt="logo" width="300px" />
-        </picture>
-      </div>
+    
+    <header class="header">
+      <img src="./assets/logo/Asset 16@4x.png" alt="logo" width="300px" class="logo" />
     </header>
 
     <nav>
       <div class="navblock">
         <ul class="navlinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#Products">Products</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
           <li><a href="#Contact">Contact</a></li>
           <li><a href="#Info">Info</a></li>
         </ul>
@@ -28,68 +25,94 @@
 
     <main>
       <!-- banner -->
-      <div class="promotion">
-        <h1>50% off this weekend</h1>
-        <p>
-          New dishes are on our Menu, visit us and try our new dishes 🍰🍪🍗🍔🍕
-        </p>
-      </div>
+      <section class="promotion">
+        <article>
+           <h1>50% off this weekend</h1>
+           <p>
+             New dishes are on our Menu, visit us and try our new dishes 🍰🍪🍗🍔🍕
+           </p>
+        </article>
+      </section>
 
       <!-- products 3 listed products on main -->
-      <div class="product-one product">
-        <picture>
-          <img src="./assets/products/p1.jpeg" alt="product in Menu" />
-        </picture>
-        <h3>Our New Menu</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-          dolores pariatur nisi reiciendis recusandae impedit error numquam
-          aperiam ullam tempore!
-        </p>
-      </div>
+      <section class="product-one" id="products">
+        <article class="product">
 
-      <div class="product-two product">
-        <picture>
-          <img src="./assets/products/p0.jpg" alt="product in Menu" />
-        </picture>
-        <h3>Book a Table</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-          dolores pariatur nisi reiciendis recusandae impedit error numquam
-          aperiam ullam tempore!
-        </p>
-      </div>
+          <picture>
+            <img src="./assets/products/p1.jpeg" alt="product in Menu" />
+          </picture>
+          <h3>Our New Menu</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+            dolores pariatur nisi reiciendis recusandae impedit error numquam
+            aperiam ullam tempore!
+          </p>
 
-      <div class="product-three product">
-        <picture>
-          <img src="./assets/products/p3.jpg" alt="product in Menu" />
-        </picture>
-        <h3>Opening Hours</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-          dolores pariatur nisi reiciendis recusandae impedit error numquam
-          aperiam ullam tempore!
-        </p>
-        <p><ul>
-            <li>Mon - Fri: 2pm - 10pm</li>
-            <li>Sat: 2pm - 11pm</li>
-            <li>Sun: 2pm - 9pm</li>
-        </ul></p>
-      </div>
+        </article>
+      </section>
+
+
+      <section class="product-two">
+        <article class="product">
+
+          <picture>
+            <img src="./assets/products/p0.jpg" alt="product in Menu" />
+          </picture>
+          <h3>Book a Table</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+            dolores pariatur nisi reiciendis recusandae impedit error numquam
+            aperiam ullam tempore!
+          </p>
+
+        </article>
+      </section>
+
+
+      <section class="product-three">
+        <article class="product">
+
+
+          <picture>
+            <img src="./assets/products/p3.jpg" alt="product in Menu" />
+          </picture>
+          <h3>Opening Hours</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+            dolores pariatur nisi reiciendis recusandae impedit error numquam
+            aperiam ullam tempore!
+          </p>
+          <p><ul>
+              <li>Mon - Fri: 2pm - 10pm</li>
+              <li>Sat: 2pm - 11pm</li>
+              <li>Sun: 2pm - 9pm</li>
+          </ul></p>
+
+
+        </article>
+      </section>
+
+
     </main>
 
-    <footer>
-      <div class="footer">
-        <div class="footer-logo">
-          <picture>
-            <img src="./assets/logo/Asset 7@4x.png" alt="" width="10%" />
-          </picture>
-        </div>
-        <div class="footer-copy">
-          _______________________________________________ <br / > copyright
-          Little Lemon
-        </div>
+    <footer class="footer">
+
+      <!-- footer left column "logo" -->
+      <div class="footer-logo">
+        <picture>
+          <img src="./assets/logo/Asset 7@4x.png" alt="" width="36px" />
+        </picture>
       </div>
+      
+      <!-- footer right column "copyright" -->
+      <div class="footer-copy">
+        <p>
+          copyright
+          Little Lemon
+        </p>
+      </div>
+      
     </footer>
+
   </body>
 </html>

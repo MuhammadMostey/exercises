@@ -1,9 +1,7 @@
-
 # # Library project
 
 # library = []
 # wishlist = []
-
 
 # owned_book = input("Enter the name of a book you own: ")
 # if (owned_book):
@@ -12,7 +10,7 @@
 # another_owned_book = input("Enter the name of another book you own (or press Enter to skip): ")
 # if (another_owned_book):
 # 	library.append(another_owned_book )
-	
+
 # print('\n')
 # print (f'Your Library: {library}')
 # print('\n')
@@ -25,11 +23,21 @@
 # if (another_wish_to_have):
 # 	wishlist.append(another_wish_to_have)
 
+# print(f"library: {library}") 
+# print(f"wishlist: {wishlist}" ) 
+
+
 # print('\n')
 # print (f'Your Wishlist: {wishlist}')
 # print('\n')
 
 # acquired_from_wish = input("Enter the name of a book from your wishlist that you've aquired (or press Enter to skip): ")
+# library.append(acquired_from_wish)
+# wishlist.remove(acquired_from_wish)
+
+# print(f"library: {library}") 
+# print(f"wishlist: {wishlist}") 
+
 # if (acquired_from_wish):
 # 	wishlist.remove(acquired_from_wish)
 # 	library.append(acquired_from_wish)
