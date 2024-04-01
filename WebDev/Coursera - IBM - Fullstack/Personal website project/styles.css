@@ -250,7 +250,7 @@ nav ul li a:hover {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
-  background-color: #fff;
+  background-color: #7e57c2; /* Purple color */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -261,7 +261,7 @@ nav ul li a:hover {
 }
 
 .close {
-  color: #aaa;
+  color: #ffffff; /* White color for close icon */
   float: right;
   font-size: 20px;
   font-weight: bold;
@@ -269,7 +269,25 @@ nav ul li a:hover {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #ffffff; /* White color for close icon on hover/focus */
   text-decoration: none;
   cursor: pointer;
+}
+
+#modal-button {
+  background-color: #ffffff; /* White color for button background */
+  color: #7e57c2; /* Purple color for button text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#modal-button:hover {
+  background-color: #d1c4e9; /* Light purple color on button hover */
 }
