@@ -242,39 +242,36 @@ nav ul li a:hover {
 }
 
 /* modal window*/
-.modal {
+.checkmark-circle {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ffffff; /* White color for checkmark circle */
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
+.checkmark:after {
+  content: "";
+  width: 12px;
+  height: 24px;
+  border: solid #ffffff; /* White color for checkmark lines */
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  transform: rotate(45deg);
   display: none;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  background-color: #7e57c2; /* Purple color */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.modal-content {
-  text-align: center;
-}
-
-.close {
-  color: #ffffff; /* White color for close icon */
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #ffffff; /* White color for close icon on hover/focus */
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#modal-button {
+.modal-button {
   background-color: #ffffff; /* White color for button background */
   color: #7e57c2; /* Purple color for button text */
   border: none;
@@ -288,6 +285,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-#modal-button:hover {
+.modal-button:hover {
   background-color: #d1c4e9; /* Light purple color on button hover */
 }
