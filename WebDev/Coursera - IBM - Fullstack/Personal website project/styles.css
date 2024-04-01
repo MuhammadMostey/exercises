@@ -43,6 +43,11 @@ header {
   align-items: center;
 }
 
+.email,
+.phone {
+  font-size: 0.75rem;
+}
+
 nav ul {
   list-style: none;
   display: flex;
