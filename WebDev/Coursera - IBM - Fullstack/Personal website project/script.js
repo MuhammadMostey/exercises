@@ -1,3 +1,24 @@
+// document
+//   .getElementById("recommendation-form")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     const recommendationText = document.getElementById(
+//       "recommendation-text"
+//     ).value;
+//     const yourName = document.getElementById("your-name").value; // Get the value of the input field "Your Name"
+
+//     // Check if the input field "Your Name" is empty, if not, concatenate it with the recommendation text
+//     const recommendation = yourName
+//       ? yourName + ": " + recommendationText
+//       : recommendationText;
+
+//     const recommendationsList = document.querySelector("#recommendations ul");
+//     const newRecommendation = document.createElement("li");
+//     newRecommendation.textContent = recommendation;
+//     recommendationsList.appendChild(newRecommendation);
+//     alert("Recommendation submitted successfully!");
+//   });
+
 document
   .getElementById("recommendation-form")
   .addEventListener("submit", function (event) {
@@ -5,9 +26,8 @@ document
     const recommendationText = document.getElementById(
       "recommendation-text"
     ).value;
-    const yourName = document.getElementById("your-name").value; // Get the value of the input field "Your Name"
+    const yourName = document.getElementById("your-name").value;
 
-    // Check if the input field "Your Name" is empty, if not, concatenate it with the recommendation text
     const recommendation = yourName
       ? yourName + ": " + recommendationText
       : recommendationText;
@@ -16,7 +36,22 @@ document
     const newRecommendation = document.createElement("li");
     newRecommendation.textContent = recommendation;
     recommendationsList.appendChild(newRecommendation);
-    alert("Recommendation submitted successfully!");
+
+    const modal = document.getElementById("modal");
+    const modalMessage = document.getElementById("modal-message");
+    modalMessage.textContent = "Recommendation submitted successfully!";
+    modal.style.display = "block";
+
+    const closeModal = document.getElementsByClassName("close")[0];
+    closeModal.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
   });
 
 // Show or hide the scroll-to-top button based on the user's scroll position
