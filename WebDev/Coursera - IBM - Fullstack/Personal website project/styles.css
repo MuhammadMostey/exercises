@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+section {
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+
+/*headings*/
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: purple;
+}
+
+/*header and navbar section*/
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* profile section styling */
+.profile-image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+
+.profile .image-profile {
+  grid-column: 1/4;
+}
+
+.profile .profile-txt {
+  grid-column: 4/13;
+  font-size: 2rem;
+  color: gray;
+}
+.profile .name {
+  color: purple;
+}
+
+.profile-txt h3 {
+  font-size: 2rem;
+}
+
+/* skills section styling */
+.skills {
+  text-align: center;
+  display: flex;
+  justify-content: start;
+}
+
+/* .skills .skill-item img {
+  width: 4rem;
+  margin-right: 0.5rem;
+} */
+
+.skills .skill-item i {
+  font-size: 4rem;
+  margin-right: 0.5rem;
+}
+
+.skill-item {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px gray;
+  border-radius: 5px;
+}
+.skill-item p {
+  padding-top: 1.5rem;
+  font-weight: 700;
+}
+
+/* projects section styling */
+.projects .project {
+  margin-bottom: 20px;
+}
+.project li {
+  margin-left: 3rem;
+}
+.project h3 {
+  color: #000;
+}
+
+/* recommendations section styling */
+.recommendations ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recommendations-item ul {
+  text-align: center;
+  display: inline-flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.recommendations-item li {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border: solid 1px gray;
+  border-radius: 5px;
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+}
+
+.recommendations-item li::before {
+  content: '" ';
+  margin-right: 0.25rem;
+}
+
+.recommendations-item li::after {
+  content: '" ';
+  margin-left: 0.25rem;
+}
+
+/* footer section styling */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer i {
+  font-size: 1.25rem;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+/* Styles for the form elements */
+
+#recommendation-form {
+  width: 50%;
+  margin: 3rem auto; /* Center the form horizontally */
+  display: flex;
+  flex-direction: column;
+}
+
+#your-name,
+#recommendation-text,
+#recommendation-form button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Modern style for the button */
+#recommendation-form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+#recommendation-form button:hover {
+  background-color: #45a049;
+}
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+#scrollToTop i {
+  font-size: 20px;
+}
