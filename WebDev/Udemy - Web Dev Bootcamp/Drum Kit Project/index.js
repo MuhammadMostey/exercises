@@ -8,41 +8,20 @@ let tomFourSound = new Audio("sounds/tom-4.mp3");
 let kickDrumSound = new Audio("sounds/kick-bass.mp3");
 let snareSound = new Audio("sounds/snare.mp3");
 
-// using keyclicks
-// for (let i = 0; i < drumButtonElement.length; i++) {
-//   drumButtonElement[i].addEventListener("keydown", function (event) {
-//     switch (event.key) {
-//       case "w":
-//         tomOneSound.play();
-//         break;
-//       case "a":
-//         tomTwoSound.play();
-//         break;
-//       case "s":
-//         tomThreeSound.play();
-//         break;
-//       case "d":
-//         tomFourSound.play();
-//         break;
-//       case "j":
-//         snareSound.play();
-//         break;
-//       case "k":
-//         crashSound.play();
-//         break;
-//       case "l":
-//         kickDrumSound.play();
-//         break;
-//       default:
-//         "";
-//         break;
-//     }
-//   });
-// }
+// detecting mouse keyclicks
+for (let i = 0; i < drumButtonElement.length; i++) {
+  drumButtonElement[i].addEventListener("click", function () {
+    makeSound(drumButtonElement[i].innerHTML);
+  });
+}
 
-// using keyboard
+// detecting keyboard pressed keys
 document.addEventListener("keydown", function (event) {
-  switch (event.key) {
+  makeSound(event.key);
+});
+
+function makeSound(event) {
+  switch (event) {
     case "w":
       tomOneSound.play();
       break;
@@ -68,8 +47,4 @@ document.addEventListener("keydown", function (event) {
       "";
       break;
   }
-});
-
-// function handleClick() {
-//   audio1.play();
-// }
+}
