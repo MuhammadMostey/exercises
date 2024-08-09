@@ -1,5 +1,5 @@
 import "../../globals.css";
 
 export default function Footer() {
-  return <div>Footer</div>;
+  return <footer className="footer">&copy; 2024. All righrs reserved</footer>;
 }
