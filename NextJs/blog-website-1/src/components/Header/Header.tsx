@@ -1,6 +1,7 @@
-import "../../globals.css";
+import "../../app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import SiteNav from "../SiteNav/SiteNav";
 
 export default function Header() {
   return (
@@ -15,10 +16,7 @@ export default function Header() {
         />
       </Link>
 
-      <nav className="nav">
-        <Link href="/"> Home </Link>
-        <Link href="../../posts"> Posts </Link>
-      </nav>
+      <SiteNav />
     </header>
   );
 }
