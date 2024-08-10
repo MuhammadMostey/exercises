@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 const RoutePaths = [
   { Label: "Home", path: "/" },
   { Label: "Posts", path: "/posts" },
+  { Label: "Write a post", path: "/submit-post" },
 ];
 
 export default function SiteNav() {
