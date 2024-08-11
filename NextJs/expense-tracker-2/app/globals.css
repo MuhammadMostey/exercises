@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/*custom styling*/
+
+h1 {
+  @apply text-4xl text-center p-4;
+}
+
+.new-items-form-div {
+  @apply bg-slate-800 p-4 rounded-lg;
+}
+
+.new-items-form {
+  @apply grid grid-cols-6 items-center;
+}
+
+input {
+  @apply p-3 border-[2px]  focus:border-pink-600 text-black mx-[0.75rem];
+}
+
+.btn-1 {
+  @apply p-3 text-xl bg-slate-950 hover:bg-slate-900 text-white;
+}
+
+.btn-x {
+  @apply w-16 p-4 border-l-2 border-slate-800  bg-slate-950 hover:bg-slate-900;
+}
+
+.items-list {
+  @apply flex justify-between p-3 w-full;
+}
+/*original styling*/
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
