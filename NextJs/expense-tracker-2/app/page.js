@@ -6,10 +6,11 @@ import React, { useState, useEffect } from "react";
 import {
   addDoc,
   getDoc,
+  deleteDoc,
+  doc,
   collection,
   query,
   onSnapshot,
-  QuerySnapshot,
 } from "firebase/firestore";
 import { db } from "../firebase";
 
@@ -44,7 +45,7 @@ export default function Home() {
       let itemsArr = [];
 
       querySnapshot.forEach((doc) => {
-        itemsArr.push({ ...doc.data(), key: doc.id });
+        itemsArr.push({ ...doc.data(), id: doc.id });
       });
       setItems(itemsArr);
 
@@ -65,6 +66,9 @@ export default function Home() {
     });
   }, []);
 
+  const deleteItem = async (id) => {
+    await deleteDoc(doc(db, "items", id));
+  };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
@@ -102,7 +106,7 @@ export default function Home() {
                   <span className="capitalize">{item.name}</span>
                   <span>{item.price}</span>
                 </div>
-                <button type="submit" className="btn-x">
+                <button className="btn-x" onClick={() => deleteItem(item.id)}>
                   X
                 </button>
               </li>
