@@ -24,7 +24,6 @@ export default function Home() {
   const [total, setTotal] = useState(0);
   const [newItem, setNewItem] = useState({ name: "", price: "" });
 
-
   const addNewItem = async (e) => {
     e.preventDefault();
     if (newItem.name !== "" && newItem.price !== "") {
